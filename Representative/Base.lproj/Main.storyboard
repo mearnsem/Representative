@@ -51,20 +51,20 @@
         <scene sceneID="oRg-mo-X5K">
             <objects>
                 <tableViewController id="ngz-Tz-z8U" customClass="StateDetailTableViewController" customModule="Representative" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="192" sectionHeaderHeight="28" sectionFooterHeight="28" id="gfK-xJ-Jjz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="gfK-xJ-Jjz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="repCell" rowHeight="192" id="RMh-41-nJk" customClass="RepTableViewCell" customModule="Representative" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="192"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="repCell" rowHeight="128" id="RMh-41-nJk" customClass="RepTableViewCell" customModule="Representative" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RMh-41-nJk" id="Wju-mU-Px8">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="191"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="127"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="l6e-Cj-tFy">
-                                            <rect key="frame" x="8" y="21" width="584" height="150"/>
+                                            <rect key="frame" x="8" y="11" width="584" height="105"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hD-bq-iMn">
                                                     <rect key="frame" x="0.0" y="0.0" width="584" height="30"/>
@@ -75,45 +75,36 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-cw-rQ1">
-                                                    <rect key="frame" x="0.0" y="30" width="584" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="ycO-jq-KL1"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9o-Hc-Su5">
-                                                    <rect key="frame" x="0.0" y="60" width="584" height="30"/>
+                                                    <rect key="frame" x="0.0" y="30" width="584" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="hj8-Gj-tiW"/>
+                                                        <constraint firstAttribute="height" constant="25" id="hj8-Gj-tiW"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8p-xW-fmC">
-                                                    <rect key="frame" x="0.0" y="90" width="584" height="30"/>
+                                                    <rect key="frame" x="0.0" y="55" width="584" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="geG-Ih-ZIe"/>
+                                                        <constraint firstAttribute="height" constant="25" id="geG-Ih-ZIe"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOV-JX-ezd">
-                                                    <rect key="frame" x="0.0" y="120" width="584" height="30"/>
+                                                    <rect key="frame" x="0.0" y="80" width="584" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="Uvo-v0-n77"/>
+                                                        <constraint firstAttribute="height" constant="25" id="Uvo-v0-n77"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="150" id="f5s-3C-Gtl"/>
+                                                <constraint firstAttribute="height" constant="105" id="f5s-3C-Gtl"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -126,7 +117,6 @@
                                 <connections>
                                     <outlet property="districtLabel" destination="D9o-Hc-Su5" id="AoS-Jf-vlW"/>
                                     <outlet property="nameLabel" destination="2hD-bq-iMn" id="sJH-3P-b7r"/>
-                                    <outlet property="partyLabel" destination="o5M-cw-rQ1" id="wsM-dI-Ic3"/>
                                     <outlet property="phoneLabel" destination="UOV-JX-ezd" id="2oF-tp-tGF"/>
                                     <outlet property="websiteLabel" destination="p8p-xW-fmC" id="EYI-0z-Gyl"/>
                                 </connections>

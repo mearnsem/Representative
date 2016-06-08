@@ -17,14 +17,17 @@ class StateDetailTableViewController: UITableViewController {
         super.viewDidLoad()
         
         if let state = state {
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+            
             RepresentativeController.searchRepsByState(state) { (representatives) in
                 self.representatives = representatives
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.tableView.reloadData()
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                })
             }
-            dispatch_async(dispatch_get_main_queue(), { 
-                self.tableView.reloadData()
-            })
+            
         }
-        
         
     }
 
@@ -38,7 +41,8 @@ class StateDetailTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("repCell", forIndexPath: indexPath) as? RepTableViewCell
 
-        cell?.updateWithRepresentative()
+        let representative = representatives[indexPath.row]
+        cell?.updateWithRepresentative(representative)
 
         return cell ?? RepTableViewCell()
     }
